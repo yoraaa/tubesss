@@ -1,0 +1,37 @@
+{% extends 'base.html' %}  
+{% block head %}  
+<title>Tugas Akhir Microdential</title>  
+{% endblock %}  
+    
+{% block body %}  
+  <div class="container-contact100">  
+    <div class="wrap-contact100">  
+      <form class="contact100-form validate-form" action="/" method="GET">  
+        {% if finalData == 1 %}  
+        <span class="contact100-form-title">  
+          SWASTA  
+        </span>  
+    
+        {% else %}  
+        <span class="contact100-form-title">  
+          NEGERI  
+        </span>  
+    
+        {% endif %}  
+    
+        <div class="container-contact100-form-btn">  
+          <div class="wrap-contact100-form-btn">  
+            <div class="contact100-form-bgbtn"></div>  
+            <button class="contact100-form-btn">  
+              <span>  
+                Selesai  
+              </span>  
+            </button>  
+          </div>  
+        </div>  
+          
+      </form>  
+    </div>  
+  </div>  
+    
+{% endblock %}  
